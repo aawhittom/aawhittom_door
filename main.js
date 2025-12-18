@@ -76,11 +76,11 @@ function init() {
         });
 
         scene.add(door);
-        door.position.y = -2.05;
+        door.position.y = -3;
     });
 
     // Camera
-    camera = new THREE.PerspectiveCamera(95, sizes.width / sizes.height, 0.1, 1000);
+    camera = new THREE.PerspectiveCamera(85, sizes.width / sizes.height, 0.1, 1000);
     camera.position.set(0, -0.7,3);
 
     // Controls
@@ -153,6 +153,7 @@ function animate() {
 
     renderer.render(scene, camera);
 }
+
 
 
 
