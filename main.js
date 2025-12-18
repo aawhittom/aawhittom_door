@@ -76,7 +76,7 @@ function init() {
         });
 
         scene.add(door);
-        door.position.y = -3;
+        door.position.y = -2.6;
     });
 
     // Camera
@@ -153,6 +153,7 @@ function animate() {
 
     renderer.render(scene, camera);
 }
+
 
 
 
