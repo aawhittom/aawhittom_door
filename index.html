@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!--    link css file -->
+        <!--   <link rel="stylesheet" href="./style.css">   -->
+        
+
+        <!-- Remplace CSS file  -->
+        <style>
+			
+			body {
+            margin: 0;
+            overflow: hidden;
+
+			background-color: #e6eee000;
+			color: #000;	
+			}
+         
+        #canvas-container {
+            
+            width: 100%;
+            height: 100vh;
+        }
+		
+		</style>
+    </head>
+
+    <body>
+
+        <div id="experience">
+            <canvas id="experience-canvas"></canvas>
+        </div>
+
+        <!-- https://threejs.org/manual/#en/installation   Option 02  -->
+
+        <script type="importmap">
+            {
+            "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
+                    }
+            }
+
+        
+         </script> 
+
+
+
+        <!-- // link main.js file --> 
+        <script type="module" src="./main.js"></script>
+        
+    </body>
+</html>
