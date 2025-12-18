@@ -81,7 +81,7 @@ function init() {
 
     // Camera
     camera = new THREE.PerspectiveCamera(80, sizes.width / sizes.height, 0.1, 1000);
-    camera.position.set(0, -0.7,1.1);
+    camera.position.set(0, -0.7,3);
 
     // Controls
     controls = new OrbitControls(camera, renderer.domElement);
@@ -153,4 +153,5 @@ function animate() {
 
     renderer.render(scene, camera);
 }
+
 
