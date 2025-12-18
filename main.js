@@ -81,16 +81,20 @@ function init() {
 
     // Camera
     camera = new THREE.PerspectiveCamera(80, sizes.width / sizes.height, 0.1, 1000);
-    camera.position.set(0, -0.7,5);
+    camera.position.set(0, -0.7,2.1);
 
     // Controls
     controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
 
-    controls.minDistance = 4.5;
-	controls.maxDistance =5;
+    //controls.minDistance = 4.5;
+	//controls.maxDistance = 5;
+	
     controls.enablePan = false;
+    
+    controls.enableZoom = false;
+    
     //controls.maxPolarAngle = Math.PI/4;
     //controls.maxAzimuthAngle = Math.PI/3;
     
